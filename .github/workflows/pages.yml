@@ -5,22 +5,33 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
           fetch-depth: 0
 
+      - name: Copy website files
+        run: |
+          rm -rf public
+          mkdir public
+          cp index.html about.html bouquets.html contact.html gallery.html journal.html weddings.html public/
+          cp -R css js images public/
+
       - name: Deploy to GitHub Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: '.'
-
-      - name: Deploy artifact
-        uses: actions/deploy-pages@v2
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          user_name: github-actions
+          user_email: github-actions@github.com
+          commit_message: "Deploy site to GitHub Pages"
