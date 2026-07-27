@@ -1,0 +1,12 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" rx="80" fill="#F7F2EB"/>
+  <circle cx="200" cy="200" r="140" fill="#E8D2B7"/>
+  <path d="M200 95C175 132 147 152 128 186C115 207 118 236 139 250C160 263 187 262 204 244C221 226 227 202 223 180C220 154 214 126 200 95Z" fill="#8B5E3C"/>
+  <path d="M200 95C223 132 251 152 270 186C283 207 280 236 259 250C238 263 211 262 194 244C177 226 171 202 175 180C178 154 184 126 200 95Z" fill="#A66A45"/>
+  <path d="M200 116C174 150 158 176 150 208C144 230 152 251 171 261C190 271 214 266 227 247C240 228 242 202 236 172C232 150 223 128 200 116Z" fill="#C59563"/>
+  <path d="M195 122C192 145 194 166 201 185C208 204 219 221 231 237" stroke="#6E472F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M206 122C209 145 207 166 200 185C193 204 182 221 170 237" stroke="#6E472F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200 145C188 160 179 176 176 195" stroke="#6E472F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M200 145C212 160 221 176 224 195" stroke="#6E472F" stroke-width="7" stroke-linecap="round"/>
+  <text x="200" y="322" text-anchor="middle" font-family="'Cormorant Garamond','Great Vibes', serif" font-size="34" fill="#2F241D">Mon Petite Fleur</text>
+</svg>
